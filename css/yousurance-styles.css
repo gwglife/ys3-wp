@@ -24,6 +24,19 @@ header{
     width:100%;
 }
 
+.header-vh{
+    height:80vh;
+}
+
+.home .header-vh{
+    height:100vh;;
+}
+
+a{
+    color:#fff;
+    font-weight:600;
+}
+
 .navbar-dark .navbar-nav .nav-link{
     color:#fff;
     font-weight:600;
