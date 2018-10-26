@@ -1,0 +1,40 @@
+
+
+
+  @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+
+  body {
+    font-family:'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    color: #ececec;
+    background-color: #00021d;
+    padding: 0 !important;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing:.05rem;
+    line-height:185%;
+}
+
+header{
+    position:absolute;
+    top:0;
+    width:100%;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:#fff;
+    font-weight:600;
+}
+
+body nav img{
+    max-width:230px;
+}
+
+@media(max-width:540px){
+  #wpadminbar{
+    top:-45px!important;
+}  
+}

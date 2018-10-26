@@ -1,71 +1,59 @@
-# MaterialWP
+# understrap-child
+Basic Child Theme for UnderStrap Theme Framework: https://github.com/understrap/understrap
 
-This is a starter Material Design WordPress Theme based off the Bootstrap framework.
+## How it works
+Understrap Child Theme shares with the parent theme all PHP files and adds its own functions.php on top of the UnderStrap parent theme's functions.php.
 
-[View Demo](http://materialwp.com)
+**IT DOES NOT LOAD THE PARENT THEMES CSS FILE(S)!** Instead it uses the UnderStrap Parent Theme as a dependency via npm and compiles its own CSS file from it.
 
+Understrap Child Theme uses the Enqueue method to load and sort the CSS file the right way instead of the old @import method.
 
-## Getting Started
+## Installation
+1. Install the parent theme UnderStrap first: `https://github.com/understrap/understrap`
+   - IMPORTANT: If you download UnderStrap from GitHub make sure you rename the "understrap-master.zip" file to "understrap.zip" or you might have problems using this child theme!
+1. Upload the understrap-child folder to your wp-content/themes directory
+1. Go into your WP admin backend 
+1. Go to "Appearance -> Themes"
+1. Activate the UnderStrap Child theme
 
-Upload the theme to your WordPress directory in wp-content/themes/
+## Editing
+Add your own CSS styles to `/sass/theme/_child_theme.scss`
+or import you own files into `/sass/theme/understrap-child.scss`
 
-## Credits
+To overwrite Bootstrap's or UnderStrap's base variables just add your own value to:
+`/sass/theme/_child_theme_variables.scss`
 
-The Material Design WordPress Theme was started in 2014 by [Brad Williams](http://twitter.com/braginteractive/).
+For example, the "$brand-primary" variable is used by both Bootstrap and UnderStrap.
 
-## Contributors
+Add your own color like: `$brand-primary: #ff6600;` in `/sass/theme/_child_theme_variables.scss` to overwrite it. This change will automatically apply to all elements that use the $brand-primary variable.
 
-- [Brad Williams](https://github.com/braginteractive)
-- [Eric Juden](https://github.com/ericjuden)
-- [Everaldo Matias](https://github.com/everaldomatias)
+It will be outputted into:
+`/css/understrap-child.min.css` and `/css/understrap-child.css`
 
-Without the following projects/people this theme wouldn't be possible:
+So you have one clean CSS file at the end and just one request.
 
-- http://fezvrasta.github.io/bootstrap-material-design/
-- http://underscores.me/
-- http://getbootstrap.com
+## Developing With NPM, Gulp, SASS and Browser Sync
 
-## Customization
-Basic colors changes can be made in the WordPress Customizer ( Appearance -> Customize -> Colors).
+### Installing Dependencies
+- Make sure you have installed Node.js, Gulp, and Browser-Sync [1] on your computer globally
+- Open your terminal and browse to the location of your UnderStrap copy
+- Run: `$ npm install` then: `$ gulp copy-assets`
 
-If you need to further customize the theme, it is recommended that you first create a child theme so you will be able to update the theme in the future. You can read how to create a WordPress Child theme [here](http://codex.wordpress.org/Child_Themes).
+### Running
+To work and compile your Sass files on the fly start:
 
-### Developers 
+- `$ gulp watch`
 
-1. Run `npm install` to install Node.js dependencies
-2. Run `gulp` this will start all watch tasks and run browser-sync
-3. Start making customizations 
+Or, to run with Browser-Sync:
 
-## Documentation, FAQs, and More
+- First change the browser-sync options to reflect your environment in the file `/gulpconfig.json` in the beginning of the file:
+```javascript
+  "browserSyncOptions" : {
+    "proxy": "localhost/wordpress/",
+    "notify": false
+  }
+};
+```
+- then run: `$ gulp watch-bs`
 
-If you’re interested in helping or have any questions, please [let me know](http://braginteractive.com/contact-us).
-
-
-## Material Design Themes
-Check out other Material Design WordPress themes and templates over at [MaterialDesignThemes.com](http://materialdesignthemes.com)
-
-
-## Releases
-
-0.0.6
-- update to Bootstrap 4 
-- add home template -hard coded
-- add cards to posts/pages and widgets
-
-0.0.5
-- update to Bootstrap 4 Beta 2
-- drop bower for npm
-- add gulp
-- use newer version of underscores
-- add full width page template
-
-0.0.4
-- add option for hide sidebar in archives
-- add option for layout columns in archives
-
-0.0.3
-- add bower
-- remove unyson
-
-0.0.1 - 0.0.2
-- Intial releases
+[1] Visit [https://browsersync.io/](https://browsersync.io/) for more information on Browser Sync

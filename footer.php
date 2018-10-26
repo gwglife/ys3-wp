@@ -1,30 +1,49 @@
 <?php
 /**
- * The template for displaying the footer
+ * The template for displaying the footer.
  *
- * Contains the closing of the #content div and all content after.
+ * Contains the closing of the #content div and all content after
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package MaterialWP
+ * @package understrap
  */
-
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+$container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-	</div><!-- #content -->
+<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="container">
-			<div class="site-info">
-				&copy; <?php bloginfo( 'name' );
-						echo ' - ';
-						echo date("Y"); ?>
-			</div><!-- .site-info -->
-		</div><!--  .container -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<div class="wrapper" id="wrapper-footer">
+
+	<div class="<?php echo esc_attr( $container ); ?>">
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<footer class="site-footer" id="colophon">
+
+					<div class="site-info">
+
+						<?php echo do_shortcode('[fl_builder_insert_layout slug="yousurance_footer"]'); ?>
+
+					</div><!-- .site-info -->
+
+				</footer><!-- #colophon -->
+
+			</div><!--col end -->
+
+		</div><!-- row end -->
+
+	</div><!-- container end -->
+
+</div><!-- wrapper end -->
+
+</div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
