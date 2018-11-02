@@ -26,6 +26,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
+							<?php echo do_shortcode('[fl_builder_insert_layout slug="global-contact-us-form"]'); ?>
+
+						<hr>
+
 						<?php echo do_shortcode('[fl_builder_insert_layout slug="yousurance_footer"]'); ?>
 
 					</div><!-- .site-info -->
