@@ -24,7 +24,6 @@ function change_logo_class( $html ) {
     return $html;
 }
 
-
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
