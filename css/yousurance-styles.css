@@ -62,13 +62,16 @@ h1 small, h2 small{
     display:block;
 }
 
-
 h1, h2 {
     font-size: 48px;
     line-height: 48px;
     font-weight: 200;
     margin: 0px 0;
     letter-spacing: -1px;
+}
+
+h3 a{
+color:#ff0384;
 }
 
 h4{
@@ -86,14 +89,23 @@ h5{
     color: #666;
 }
 
+hr{
+    border-top:none;
+}
 
+.rounded-circle{
+    overflow:hidden;
+}
 
 .head-nav{
   -webkit-transition: all .2s ease-in;  
-  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.99) 1%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.99) 1%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.99) 1%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 99%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 99%, rgba(0, 0, 0, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#a6000000", endColorstr="#000000ff", GradientType=0);
+}
+
+html body .nav-logo img{
+max-width:175px;
 }
 
 .logged-in .head-nav.fixed-top{
@@ -117,8 +129,17 @@ color:#FF0384;
     overflow:hidden;
 }
 
-.rounded{
+.rounded .fl-col-content{
     border-radius:10px!important;
+    overflow:hidden;
+}
+
+.text-shadow{
+    text-shadow:1px 1px 4px rgba(0,0,0,0.75);
+}
+
+.text-shadow-light{
+    text-shadow:0px 0px 2px rgba(255,255,255,0.75);
 }
 
 .fl-button-wrap a{
@@ -126,7 +147,7 @@ color:#FF0384;
 }
 
 .hero .fl-row-content-wrap:first-of-type{
-    height:66vh;
+    height:400px;
     display:flex;
 }
 
@@ -140,7 +161,6 @@ color:#FF0384;
     -ms-flex-align: center;
     -ms-flex-pack: center;
     display:flex;
-
 }
 
 .quote-link{
@@ -172,6 +192,10 @@ color:#FF0384;
     filter: alpha(opacity=0);
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
+}
+
+.quote-link-nostyle{
+
 }
 
 .quote-link a:hover{
@@ -312,8 +336,16 @@ z-index:100;
     margin-left:auto;
 }
 
+.fl-builder-content a.fl-button, .fl-builder-content a.fl-button:visited {
+    border: none;
+}
+
 body .fl-row-content-wrap {
-    padding:7rem 2rem;
+    padding:7rem 2rem 7rem;
+}
+
+body .double-diagonal .fl-row-content-wrap {
+    padding:7rem 2rem 5rem;
 }
 
 .less-padding .fl-row-content-wrap{
@@ -384,7 +416,34 @@ body nav img{
     margin-bottom: 25px!important;
 }
 
+.modal-dialog{
+    max-width:700px;
+    margin-top:5rem;
+    font-size:1rem;
+}
 
+.modal-body{
+    color:#000;
+    line-height:2rem;
+}
+
+.modal-footer a{
+    background-color:#ff0384;
+}
+
+.wistia_popover_overlay{
+    background-color:rgba(0,0,0,1)!important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    height:20px;
+    width:20px;
+    border-radius:10px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+    background:#b5b5b5;
+}
 
 @media (min-width:992px){
       .today-future .tab-content .right ul li:before{
@@ -399,6 +458,10 @@ padding-left:0;
 
 .today-future .tab-content .right ul{
 padding-left:0;
+}
+
+.logo-display .fl-module-content{
+    height:104px;
 }
 }
 
@@ -421,7 +484,7 @@ padding-left:0;
         padding:.25rem 1rem;
     }
 
-    .container{
+   #wrapper-footer .container{
         max-width:100%;
     }
 }
@@ -431,6 +494,19 @@ h1, h2{
     font-size:38px;
 }
 
+.hero .fl-row-content-wrap:first-of-type{
+    height:450px;
+    display:flex;
+}
+
+body .double-diagonal .fl-row-content-wrap{
+    padding:3rem 2rem;
+}
+
+.fl-node-5bdb74a9068b1 .fl-slide-1 .fl-slide-content, .fl-builder-content .fl-module-content-slider .fl-slide .fl-slide-content{
+    background-color:transparent!important;
+}
+
   #wpadminbar{
    position:fixed;
 }  
@@ -438,6 +514,14 @@ h1, h2{
 .fl-node-5bd387e271e23-clone{
 background-color:#00021d!important;
 }
+
+ .today-future .tab-content ul{
+padding:0;
+ }
+
+ .today-future{
+    padding:0;
+ }
 
 html body .quote-link{
     border-radius:0;

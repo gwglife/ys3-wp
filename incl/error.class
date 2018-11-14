@@ -1,0 +1,53 @@
+<?php
+ 
+class Error_Class {
+	var $_error;		// the errors associative array
+	var $_db;			// the database identifier
+	
+	function Error($conn) {
+		
+		$this->_error = array();		// establish as an array
+		$this->_db = $conn;		// set the database identitfier
+	
+	}
+	
+	
+	/**
+	 * PRE: connection to the databse has been established
+	 * 		variables $_SERVER['PHP_SELF'] and $_SERVER['REMOTE_ADDR'] exist
+	 * POST: error has been entered into the database
+	 * 		 error message page has been displayed
+	 **/ 
+	function addError($dbConn/*result - in*/,$error_message/*string - in*/,
+						$sql=""/* string - in - not required*/,
+						$user_id=""/*string - in - not required*/) 
+	{
+		// setup the connection stuff
+		$db = db_connect();
+		
+		$query = "INSERT INTO errors_log ( page_name,ip_address,query_string,user_id,
+										   sql_query,error_message ) VALUES (
+						'".$_SERVER['PHP_SELF']."',
+						'".$_SERVER['REMOTE_ADDR']."',
+						'".((isset($_SERVER['QUERY_STRING'])) ? addslashes($_SERVER['QUERY_STRING']) : "")."',
+						'".$_SESSION['employeeid']."',
+						'".addslashes($sql)."',
+						'".$error_message."')";
+		$rquas = db_query($db, $query);
+		$db->disconnect();
+		
+		header("Location: /error.php");
+		
+		exit;
+		//if (DB::isError($result))     
+		//die (DB::errorMessage($result).$query);
+		
+		// going to die for now...but later we are going to want to display
+		// a custom error message page for the user
+		echo mysql_error(); 
+		
+	    
+	}
+
+}
+?>

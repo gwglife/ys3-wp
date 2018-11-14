@@ -13,6 +13,9 @@ function understrap_remove_scripts() {
     // Removes the parent themes stylesheet and scripts from inc/enqueue.php
 }
 
+
+add_filter( 'auto_update_plugin', '__return_true' );
+
 add_filter( 'get_custom_logo', 'change_logo_class' );
 
 
@@ -23,6 +26,9 @@ function change_logo_class( $html ) {
 
     return $html;
 }
+
+
+
 
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 

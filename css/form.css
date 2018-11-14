@@ -1,0 +1,530 @@
+
+
+form hr{
+	margin-top:1.75rem;
+	margin-bottom:1.75rem;
+}
+
+.required{
+	color:#ff0086;
+}
+
+.img-header{
+	height: 400px;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	background-attachment: inherit;
+	background-position:center;
+	display: flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	min-height: 24em;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+
+form input, form select{
+	background-color:#fff;
+	border-radius:40px;
+	height:40px;
+	padding:0 1rem;
+}
+
+form select{
+	-webkit-appearance:none;
+	padding-right:2rem;
+	position:relative;
+	background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+}
+
+form input[type=submit]{
+	font-size:30px;
+	height:inherit;
+}
+
+.custom-button {
+    border: none;
+    color: #ff0384;
+    text-decoration: none;
+    background: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 40px;
+    outline: none;
+    padding: 6px 30px 8px 30px;
+    box-shadow: none;
+    text-shadow: none;
+    position: relative;
+    letter-spacing: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+form input[type=radio]{
+	height:inherit;
+	margin-right:1rem;
+	margin-left:.25rem;
+	margin-bottom:.5rem;
+}
+
+form div[class^="col-"]{
+	padding:1rem 1rem;
+}
+
+.quote-results p{
+	font-size:20px;
+	margin-bottom:0;
+}
+
+.quote-results a{
+	font-size:16px;
+}
+
+.quote-result div{
+	display: flex;
+	align-items: center;
+	margin:1rem 0;
+}
+
+.quote-region strong{
+	color:#3cc2d2;
+}
+
+.quote-monthly p{
+	font-size:20px;
+	font-weight:700;
+}
+
+.w-15{
+	width:15%;
+}
+
+.custom-button input[type=submit] {
+    position: relative;
+    display: block;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.custom-button:hover input[type=submit] {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+.wrapper:first-of-type{
+  padding:0;
+}
+
+.quote-region:before{
+
+  content:"";
+
+}
+
+/*Begin dot animation */
+.dot-container{
+  text-align:center;
+  display:block;
+  padding:2rem 0;
+}
+
+.dots {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.dots:not(:last-child) {
+  margin-right: 12px;
+}
+.dots:before, .dots:after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+}
+.dots:nth-child(1):before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+  -webkit-animation: animBefore 1s linear infinite;
+  animation: animBefore 1s linear infinite;
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+  background-color: #FF0384;
+}
+.dots:nth-child(1):after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+  -webkit-animation: animAfter 1s linear infinite;
+  animation: animAfter 1s linear infinite;
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+  background-color: #4abcec;
+}
+.dots:nth-child(2):before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+  -webkit-animation: animBefore 1s linear infinite;
+  animation: animBefore 1s linear infinite;
+  -webkit-animation-delay: -1.8s;
+  animation-delay: -1.8s;
+  background-color: #FF0384;
+}
+.dots:nth-child(2):after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+  -webkit-animation: animAfter 1s linear infinite;
+  animation: animAfter 1s linear infinite;
+  -webkit-animation-delay: -1.8s;
+  animation-delay: -1.8s;
+  background-color: #4abcec;
+}
+.dots:nth-child(3):before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+  -webkit-animation: animBefore 1s linear infinite;
+  animation: animBefore 1s linear infinite;
+  -webkit-animation-delay: -2.7s;
+  animation-delay: -2.7s;
+  background-color: #FF0384;
+}
+.dots:nth-child(3):after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+  -webkit-animation: animAfter 1s linear infinite;
+  animation: animAfter 1s linear infinite;
+  -webkit-animation-delay: -2.7s;
+  animation-delay: -2.7s;
+  background-color: #4abcec;
+}
+.dots:nth-child(4):before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+  -webkit-animation: animBefore 1s linear infinite;
+  animation: animBefore 1s linear infinite;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+  background-color: #FF0384;
+}
+.dots:nth-child(4):after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+  -webkit-animation: animAfter 1s linear infinite;
+  animation: animAfter 1s linear infinite;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+  background-color: #4abcec;
+}
+.dots:nth-child(5):before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+  -webkit-animation: animBefore 1s linear infinite;
+  animation: animBefore 1s linear infinite;
+  -webkit-animation-delay: -4.5s;
+  animation-delay: -4.5s;
+  background-color: #FF0384;
+}
+.dots:nth-child(5):after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+  -webkit-animation: animAfter 1s linear infinite;
+  animation: animAfter 1s linear infinite;
+  -webkit-animation-delay: -4.5s;
+  animation-delay: -4.5s;
+  background-color: #4abcec;
+}
+.dots:nth-child(6):before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+  -webkit-animation: animBefore 1s linear infinite;
+  animation: animBefore 1s linear infinite;
+  -webkit-animation-delay: -5.4s;
+  animation-delay: -5.4s;
+  background-color: #FF0384;
+}
+.dots:nth-child(6):after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+  -webkit-animation: animAfter 1s linear infinite;
+  animation: animAfter 1s linear infinite;
+  -webkit-animation-delay: -5.4s;
+  animation-delay: -5.4s;
+  background-color: #4abcec;
+}
+.dots:nth-child(7):before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+  -webkit-animation: animBefore 1s linear infinite;
+  animation: animBefore 1s linear infinite;
+  -webkit-animation-delay: -6.3s;
+  animation-delay: -6.3s;
+  background-color: #FF0384;
+}
+.dots:nth-child(7):after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+  -webkit-animation: animAfter 1s linear infinite;
+  animation: animAfter 1s linear infinite;
+  -webkit-animation-delay: -6.3s;
+  animation-delay: -6.3s;
+  background-color: #4abcec;
+}
+.dots:nth-child(8):before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+  -webkit-animation: animBefore 1s linear infinite;
+  animation: animBefore 1s linear infinite;
+  -webkit-animation-delay: -7.2s;
+  animation-delay: -7.2s;
+  background-color: #FF0384;
+}
+.dots:nth-child(8):after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+  -webkit-animation: animAfter 1s linear infinite;
+  animation: animAfter 1s linear infinite;
+  -webkit-animation-delay: -7.2s;
+  animation-delay: -7.2s;
+  background-color: #4abcec;
+}
+.dots:nth-child(9):before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+  -webkit-animation: animBefore 1s linear infinite;
+  animation: animBefore 1s linear infinite;
+  -webkit-animation-delay: -8.1s;
+  animation-delay: -8.1s;
+  background-color: #FF0384;
+}
+.dots:nth-child(9):after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+  -webkit-animation: animAfter 1s linear infinite;
+  animation: animAfter 1s linear infinite;
+  -webkit-animation-delay: -8.1s;
+  animation-delay: -8.1s;
+  background-color: #4abcec;
+}
+.dots:nth-child(10):before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+  -webkit-animation: animBefore 1s linear infinite;
+  animation: animBefore 1s linear infinite;
+  -webkit-animation-delay: -9s;
+  animation-delay: -9s;
+  background-color: #FF0384;
+}
+.dots:nth-child(10):after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+  -webkit-animation: animAfter 1s linear infinite;
+  animation: animAfter 1s linear infinite;
+  -webkit-animation-delay: -9s;
+  animation-delay: -9s;
+  background-color: #4abcec;
+}
+
+@-webkit-keyframes animBefore {
+  0% {
+    -webkit-transform: scale(1) translateY(-300%);
+    z-index: 1;
+  }
+  25% {
+    -webkit-transform: scale(1.3) translateY(0);
+    z-index: 1;
+  }
+  50% {
+    -webkit-transform: scale(1) translateY(300%);
+    z-index: -1;
+  }
+  75% {
+    -webkit-transform: scale(0.7) translateY(0);
+    z-index: -1;
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(-300%);
+    z-index: -1;
+  }
+}
+@keyframes animBefore {
+  0% {
+    transform: scale(1) translateY(-300%);
+    z-index: 1;
+  }
+  25% {
+    transform: scale(1.3) translateY(0);
+    z-index: 1;
+  }
+  50% {
+    transform: scale(1) translateY(300%);
+    z-index: -1;
+  }
+  75% {
+    transform: scale(0.7) translateY(0);
+    z-index: -1;
+  }
+  100% {
+    transform: scale(1) translateY(-300%);
+    z-index: -1;
+  }
+}
+@-webkit-keyframes animAfter {
+  0% {
+    -webkit-transform: scale(1) translateY(300%);
+    z-index: -1;
+  }
+  25% {
+    -webkit-transform: scale(0.7) translateY(0);
+    z-index: -1;
+  }
+  50% {
+    -webkit-transform: scale(1) translateY(-300%);
+    z-index: 1;
+  }
+  75% {
+    -webkit-transform: scale(1.3) translateY(0);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(300%);
+    z-index: 1;
+  }
+}
+@keyframes animAfter {
+  0% {
+    transform: scale(1) translateY(300%);
+    z-index: -1;
+  }
+  25% {
+    transform: scale(0.7) translateY(0);
+    z-index: -1;
+  }
+  50% {
+    transform: scale(1) translateY(-300%);
+    z-index: 1;
+  }
+  75% {
+    transform: scale(1.3) translateY(0);
+    z-index: 1;
+  }
+  100% {
+    transform: scale(1) translateY(300%);
+    z-index: 1;
+  }
+}
+
+
+@media(max-width:768px){
+
+}
+
+/* End dot animaiton */
+
+/* Begin tooltip css */
+.field-tip {
+    position:relative;
+    cursor:help;
+}
+    .field-tip .tip-content {
+        position:absolute;
+        top:-10px; /* - top padding */
+        right:9999px;
+        width:200px;
+        margin-right:-220px; /* width + left/right padding */
+        padding:10px;
+        color:#fff;
+        background:#333;
+        -webkit-box-shadow:2px 2px 5px #000;
+           -moz-box-shadow:2px 2px 5px #000;
+                box-shadow:2px 2px 5px #000;
+        opacity:0;
+        -webkit-transition:opacity 250ms ease-out;
+           -moz-transition:opacity 250ms ease-out;
+            -ms-transition:opacity 250ms ease-out;
+             -o-transition:opacity 250ms ease-out;
+                transition:opacity 250ms ease-out;
+                font-size:12px;
+    }
+        .field-tip .tip-content:before {
+            content:' '; /* Must have content to display */
+            position:absolute;
+            top:25px;
+            left:-16px; /* 2 x border width */
+            width:0;
+            height:0;
+            margin-top:-8px; /* - border width */
+            border:8px solid transparent;
+            border-right-color:#333;
+        }
+        .field-tip:hover .tip-content {
+            right:-20px;
+            opacity:1;
+            z-index:10;
+        }
+/* End tooltip CSS */
+
+@media(max-width:992px){
+
+	label{
+		margin-bottom:0;
+	}
+
+	.table-key{
+		display:none;
+	}
+
+	.quote-results a{
+		margin-bottom:;
+	}
+
+	.quote-result{
+		margin-bottom:2rem;
+	}
+
+	.w-33{
+		width:100%;
+	}
+
+	form input, form select{
+		margin-bottom:1.25rem;
+	}
+
+	form hr{
+		margin:0;
+	}
+
+}
+
+@media(max-width:776px){
+
+
+
+}
+
+@media(min-width:992px){
+
+	.w-33{
+		width:32%;
+	}
+
+	.quote-result strong{
+		display:none;
+	}
+}
+
