@@ -3,6 +3,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+add_filter( 'auto_update_plugin', '__return_true' );
+
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
     wp_deregister_style( 'understrap-styles' );
@@ -14,7 +16,7 @@ function understrap_remove_scripts() {
 }
 
 
-add_filter( 'auto_update_plugin', '__return_true' );
+
 
 add_filter( 'get_custom_logo', 'change_logo_class' );
 

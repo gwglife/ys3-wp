@@ -427,6 +427,10 @@ if( $_POST['proccess_epigenetic_insurance_quote'] == "true") {
 							"heightfeet" => $_POST['heightfeetfinal'],
 							"heightinches" => $_POST['heightinchesfinal'],
 							
+							"Taxpayer_Identification_Number__c" => $_POST['ssn'],
+							"Taxpayer_Identification_Number_Type__c" => 'SSN',
+							 
+							
 							"coverage_length" => $_POST['coverageLengthFinal'],
 							"coverage_amount" => $_POST['coverage_amount'],
 							"face_amount" => $_POST['coverage_amount'],
@@ -577,7 +581,7 @@ if( $_POST['proccess_epigenetic_insurance_quote'] == "true") {
 			
 			//$sfidu
 			*/
-	
+			
 			header("Location: /success?msg=signupsuccess&id=".$sfidu."");
 			exit;
 		}

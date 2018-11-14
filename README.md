@@ -1,3 +1,9 @@
+#Yousurance WordPress Repo
+Built on a base theme of understrap and designed to work with the Beaver Builder front-end editing plugin
+
+##If you're working on the quote tool, read below:
+The directories "incl" and "salesforce" might live in the theme repo but they actually need to be uploaded to the server root to work
+
 # understrap-child
 Basic Child Theme for UnderStrap Theme Framework: https://github.com/understrap/understrap
 
