@@ -221,6 +221,10 @@ color:#FF0384;
     transform: translateX(-10px);
 }
 
+.uabb-module-content .uabb-text-editor ul li{
+    margin-bottom:1rem;
+}
+
 .today-future .nav{
     justify-content:center;
 }
