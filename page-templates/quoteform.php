@@ -1457,6 +1457,20 @@ function filteralpha(event) {
 			<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.inputmask.bundle.js"></script>
 
 			<script>
+				
+				jQuery("input#firstName, input#lastName").on({
+					keydown: function(e) {
+						if (e.which === 32)
+							return false;
+					},
+					change: function() {
+						this.value = this.value.replace(/\s/g, "");
+					}
+				});
+
+			</script>
+
+			<script>
 
 //Quote form input masks and disables the submit button
 jQuery(document).ready(function () {
