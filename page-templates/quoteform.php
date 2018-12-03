@@ -1031,7 +1031,96 @@ function filteralpha(event) {
 
 								</div>  
 
+<div class="col-sm-12 disclaimer">
+	
+	<input type="checkbox" name="disclaimer" value="disclaimer" style="height:21px;">
+	I have read and agree to the <a href="#" data-toggle="modal" style="color:#ff0083;" data-target="#disclaimer">research consent authorization document</a>
 
+<!-- Modal -->
+<div class="modal fade" id="disclaimer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Research Consent Authorization</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <h3>Attention: Please read, sign and return with saliva sample to YouSurance</h3>
+
+<p>YouSurance aims to make and support scientific discoveries, publish those discoveries in scientific journals, and to develop less invasive screening techniques to those currently used by insurance providers. With our goals in mind, we invite you to take part in our epigenetic study. By agreeing to participate in our study, you will receive a free YouSurance Longevity Report.</p>
+
+<p>To get started and receive your free YouSurance Spit Kit, you must agree to the terms of this Research Consent Authorization Document by checking the “I Agree” box on the back side of this document. </p>
+
+<ol>
+	<li>
+
+		<strong>What am I agreeing to if I consent?</strong>
+
+		<p> By checking the box on the back side of this document, you agree to let YouSurance, its affiliated companies and their respective agents and unaffiliated researchers use your Epigenetic, Genetic & Self-Reported Information for research and development of epigenetic technologies and innovations.</p>
+
+		<p>“Epigenetic, Genetic & Self-Reported Information” includes:</p>
+
+		<ul>
+			<li>Your epigenetic and genetic data</li>
+			<li> Information you enter into this web site and any other forms completed by you in connection with our research</li>
+			<li>Data you authorize us to import for research (if we request health information, we will ask you to review a separate authorization form)</li>
+			<li>Your age, and your smoking and alcohol consumption status</li>
+			<li>Any information you submitted prior to giving consent. </li>
+		</ul>
+
+	</li>
+	<li>
+		<strong>
+			Who gets to see my personal information?
+		</strong>
+
+		<p> By checking the box on the back side of this document, you agree to let YouSurance and its affiliated companies share your Epigenetic, Genetic & Self-Reported Information with the following people and companies</p>
+
+		<ul>
+			<li>Within YouSurance and its Affiliates: YouSurance and its affiliated companies</li>
+			<li>Outside of YouSurance: YouSurance’s external research partners, insurance companies and in scientific publications; and</li>
+			<li>As Required by Law: Governmental authorities, regulators and agencies as required by law</li>
+		</ul>
+	</li>
+
+	<li>
+		<strong>How does YouSurance keep your data protected and private?</strong>
+
+		<p> While YouSurance strives to maintain reasonable data security measures to protect your Epigenetic, Genetic & Self-Reported Information, no security measures are invulnerable. <br>  To learn more about our privacy practices, please see our Privacy Policy.</p>
+	</li>
+
+	<li>
+		<strong>Can I withdraw from participation in the research study?</strong>
+		<p>  At any time, you may withdraw all or some of your Epigenetic, Genetic & Self-Reported Information from YouSurance’s research study. You can withdraw your consent by sending an email to info@yousurance.com. </p>
+		<p>   If you withdraw all or some of your Epigenetic, Genetic & Self-Reported Information, YouSurance will prevent that information from being used in new YouSurance research initiated after 30 days from receipt of your request (it may take up to 30 days to withdraw your information after you withdraw your consent). </p>
+		<p>Any research on your data that has been performed or published prior to this date will not be reversed, undone, or withdrawn</p>
+	</li>
+
+	<li>
+	<strong>Who owns the research data?</strong>
+	<p>By checking the “I agree” box and signing below, you agree that: </p>
+	<ul>
+		<li>YouSurance, its affiliates, other permitted recipients and licensees, and each of their respective successors and assigns may develop intellectual property, including but not limited to patents, copyrights and trademarks, and/or may commercialize products or services, directly or indirectly in connection with its epigenetic research (collectively referred to as “Epigenetic Technology”), which may include the use of your Epigenetic, Genetic & Self-Reported Information;</li>
+		<li>YouSurance, its affiliates, other permitted recipients and licensees, and each of their respective successors and assigns retain all rights, title and interest in and to the Epigenetic Technology; </li>
+		<li>You will not have any right, title or interest in the Epigenetic Technology; and</li>
+		<li>ou will not receive any compensation in connection with the Epigenetic Technology</li>
+	</ul>
+
+</li>
+</ol>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 
 
 								<div class="col-sm-12 col-md-12 col-lg-6">
