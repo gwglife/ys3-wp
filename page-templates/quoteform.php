@@ -1033,7 +1033,7 @@ function filteralpha(event) {
 
 <div class="col-sm-12 disclaimer">
 	
-	<input type="checkbox" name="disclaimer" value="disclaimer" style="height:21px;">
+	<input type="checkbox" name="disclaimer" value="disclaimer" style="height:21px;" required>
 	I have read and agree to the <a href="#" data-toggle="modal" style="color:#ff0083;" data-target="#disclaimer">research consent authorization document</a>
 
 <!-- Modal -->
@@ -1106,7 +1106,7 @@ function filteralpha(event) {
 		<li>YouSurance, its affiliates, other permitted recipients and licensees, and each of their respective successors and assigns may develop intellectual property, including but not limited to patents, copyrights and trademarks, and/or may commercialize products or services, directly or indirectly in connection with its epigenetic research (collectively referred to as “Epigenetic Technology”), which may include the use of your Epigenetic, Genetic & Self-Reported Information;</li>
 		<li>YouSurance, its affiliates, other permitted recipients and licensees, and each of their respective successors and assigns retain all rights, title and interest in and to the Epigenetic Technology; </li>
 		<li>You will not have any right, title or interest in the Epigenetic Technology; and</li>
-		<li>ou will not receive any compensation in connection with the Epigenetic Technology</li>
+		<li>You will not receive any compensation in connection with the Epigenetic Technology</li>
 	</ul>
 
 </li>
