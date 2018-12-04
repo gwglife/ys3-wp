@@ -54,7 +54,7 @@ if($_POST['getquote'] == 'true') {
 				"tobacco" => $tco,
 				/* uncomment once we hear back why aig and this other one aint working */
 				"carrier_ids" => array(
-					140,
+					//140,
 					193
 				  ),
 				"product_types" => ["".$_POST['coverageLength'].""],
