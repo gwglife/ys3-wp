@@ -15,6 +15,16 @@ Public Controllers
 */
 if($_POST['getquote'] == 'true') {
 	
+	//restrict access ajax only...
+    define('IS_AJAX', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
+    if(!IS_AJAX) {
+		die('Restricted access');
+    }
+    $pos = strpos($_SERVER['HTTP_REFERER'],getenv('HTTP_HOST'));
+    if($pos===false){
+		die('Restricted access');
+    }
+	
 	/* calculate current age based on their birthday */
 	$dobMonth = preg_replace('/\D/', '', $_POST['dobMonth']);
 	$dobYear= preg_replace('/\D/', '', $_POST['dobYear']);
@@ -452,7 +462,7 @@ if( $_POST['proccess_epigenetic_insurance_quote'] == "true") {
 							"current_age" => $currentage,
 							"nearest_age" => $closestage,
 							
-							"GovernmentIdType__c" => $_POST['gov-id'],
+							"GovernmentIdType__c" => stripslashes($_POST['gov-id']),
 							"GovernmentId__c" => $_POST['DriversLicense__c'],
 							
 							"IXNQuoteid" => $_POST['quote_id'],
@@ -510,10 +520,12 @@ if( $_POST['proccess_epigenetic_insurance_quote'] == "true") {
 							"wopriderannual" => $_POST['wopriderannual'],
 							"wopridermonthly" => $_POST['wopridermonthly'],
 							"wopriderquarterly" => $_POST['wopriderquarterly'],
-							"wopridersemiannual" => $_POST['wopridersemiannual']
+							"wopridersemiannual" => $_POST['wopridersemiannual'],
+							"source" => $_SESSION['source']
 							
 				);                         
 				
+				// ?source=mpls1
 				
 				//print_r($data);
 				//echo '<br><br>';
@@ -532,6 +544,7 @@ if( $_POST['proccess_epigenetic_insurance_quote'] == "true") {
 				$server_output = curl_exec($ch);
 
 				curl_close ($ch);
+			
 				
 				//print_r($server_output);
 				//exit;
