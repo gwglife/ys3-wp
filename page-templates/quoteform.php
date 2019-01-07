@@ -4,12 +4,18 @@
  */
 
 include("incl/common.php");
+
+if(isset($_GET['source']) && $_GET['source'] != '') {
+	$_SESSION['source'] = $_GET['source'];
+}else{
+	$_SESSION['source'] = 'Site Traffic';
+}
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
 <head>
-	<!-- @@ Add to head under stylesheets -->
+	<!-- @@ Add to head under stylesheets-->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script type='text/javascript' src='http://yousurance.wpengine.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 	<script type='text/javascript' src='http://yousurance.wpengine.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
@@ -83,7 +89,7 @@ function getlifeinsurancequote() {
 		type: "POST",
 		async: true,
 		url: "/get-a-life-insurance-quote",
-		data: "getquote=true&state="+state+"&tobacco="+tobaccovalue+"&coverageAmount="+coverageAmount+"&weight="+weight+"&gender="+gendervalue+"&coverageLength="+coverageLength+"&heightFeet="+heightFeet+"&heightInches="+heightInches+"&dobMonth="+dobMonth+"&dobYear="+dobYear+"&dobDay="+dobDay,
+		data: "getquote=true&csrf_token=<?php echo $token; ?>&state="+state+"&tobacco="+tobaccovalue+"&coverageAmount="+coverageAmount+"&weight="+weight+"&gender="+gendervalue+"&coverageLength="+coverageLength+"&heightFeet="+heightFeet+"&heightInches="+heightInches+"&dobMonth="+dobMonth+"&dobYear="+dobYear+"&dobDay="+dobDay,
 		success: function(msg){
 
 			document.getElementById("quotefrag").innerHTML = msg;
@@ -1160,7 +1166,7 @@ function filteralpha(event) {
 					<div class="col-sm-12 col-md-12">
 
 						<form id="ysQuote1" onsubmit="event.preventDefault(); return getlifeinsurancequote();">
-
+							<input type="hidden" name="csrf_token" value="<?php echo $token; ?>">
 							<div class="row">
 
 								<div class="col-sm-12 col-md-6 col-lg-6 pb-0 pb-lg-3">
@@ -1460,7 +1466,7 @@ function filteralpha(event) {
 
 											<div> <label for="coverageAmount">Amount of Coverage ($):</label></div>
 
-											<input type="number" min="100000" max="10000000" class="w-100" name="coverageAmount" id="coverageAmount" value=""
+											<input type="number" min="100000" max="10000000" class="w-100" name="coverageAmount" id="coverageAmount" value="<?php if(isset($_GET['coverageAmount']) && $_GET['coverageAmount'] != '') {echo strip_tags($_GET['coverageAmount']); }  ?>"
 											oninvalid="this.setCustomValidity('If you\'re looking for coverage under $100,000 or over $10,000,000 please directly contact us')"
 											oninput="this.setCustomValidity('')"
 											required>
