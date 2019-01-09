@@ -20,7 +20,7 @@ get_header();
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/jquery.steps.css" />
 <style>
 <style>
-.calchead {color:#ff0086;background-color:#000000;font-weight:bold;padding:5px;}
+.calchead {color:#ffffff;background-color:#000000;font-weight:bold;padding:5px;}
 .crow {margin-top:20px;}
 #totalneeded {font-size:3.5em;text-align:center;}
 </style>
@@ -49,7 +49,7 @@ get_header();
 				<div class="col-md-12">
 
 					<style>
-					.calchead {color:#ff0086;font-weight:bold;font-size:1.2em;}
+					.calchead {color:#ffffff;font-weight:bold;font-size:1.2em;}
 					.calcheadbg {background-color:#000000;padding:5px;}
 					.crow {margin-top:20px;}
 					.bigheader{font-size:1.5em;}
@@ -62,6 +62,7 @@ get_header();
 					<h3>Your Salary</h3>
 					<section>
 
+<div class="container">
 
 						<div class="row">
 							<div class="col-md-12 text-white calcheadbg">
@@ -98,16 +99,18 @@ get_header();
 							</div>
 							<div class="col-md-6">
 								
-<p>Based on your salary, you'll want your life insurance policy to cover at least:</p>
- <div id="total1" name="total1" class="calc-result"></div>
+								<p>Based on your salary, you'll want your life insurance policy to cover at least:</p>
+								<div id="total1" name="total1" class="calc-result"></div>
 
 							</div>
 						</div>
 
+</div>
 
 					</section>
 					<h3>Your Debt</h3>
 					<section>
+						<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-white calcheadbg">
 								<strong>2. How much debt do you have?</strong>
@@ -166,9 +169,11 @@ get_header();
 								Based on your debts, you'll want your life insurance policy to cover at least: <div id="total2" name="total2" class="calc-result"></div>
 							</div>
 						</div>
+						</div>
 					</section>
 					<h3>Your Family</h3>
 					<section>
+						<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-white calcheadbg">
 								<strong>3. How much do you pay in childcare and tuition?</strong>
@@ -195,7 +200,7 @@ get_header();
 
 						<div class="row">
 							<div class="col-md-6">
-How much tuition will your family need (include college)?  
+								How much tuition will your family need (include college)?  
 							</div>
 							<div class="col-md-6">
 								<input type="text" class="form-control" id="futuretuition" name="futuretuition" maxlength="25">
@@ -212,11 +217,13 @@ How much tuition will your family need (include college)?
 								<span style="font-size:.9em;">Based on your family’s needs, you'll want your life insurance policy to cover at least: <div id="total3" name="total3" class="calc-result"></div></span>
 							</div>
 						</div>	
-
+</div>
 
 					</section>
 					<h3>Your Assets</h3>
 					<section>
+
+						<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-white calcheadbg">
 								<strong>4. How much do you have in assets that can easily be converted into cash?</strong>
@@ -270,9 +277,13 @@ How much tuition will your family need (include college)?
 							</div>
 						</div>
 
+						</div>
+
 					</section>
 					<h3>Total</h3>
 					<section>
+
+						<div class="container">
 						<br>
 						<div class="row">
 							<div class="col-md-12 calchead text-center bigheader">
@@ -310,9 +321,8 @@ How much tuition will your family need (include college)?
 							</div>
 						</div>
 
+</div>
 					</section>
-
-
 
 
 				</div>

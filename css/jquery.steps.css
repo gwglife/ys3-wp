@@ -121,7 +121,7 @@
 .wizard > .steps .current a:hover,
 .wizard > .steps .current a:active
 {
-    background: #2184be;
+    background: #4abcec;
     color: #fff;
     cursor: default;
 }
@@ -145,11 +145,10 @@
 .wizard > .content
 {
 	
-    background: #000000;
-	background-image: url("https://yousurancestg.wpengine.com/wp-content/themes/ys3-wp/img/bg.jpg");
+    background: linear-gradient(0deg, rgba(49, 0, 111, 0) 10%, rgba(255, 3, 132, 1));
     display: block;
     margin: 0.5em;
-    min-height:40em;
+    min-height:30em;
     overflow: hidden;
     position: relative;
     width: auto;
@@ -171,7 +170,7 @@
 {
     float: left;
     position: absolute;
-    width: 95%;
+    width: 100%;
     padding: 2.5%;
 }
 
@@ -259,7 +258,7 @@
 .wizard > .actions a:hover,
 .wizard > .actions a:active
 {
-    background: #2184be;
+    background: #4abcec;
     color: #fff;
     display: block;
     padding: 0.5em 1em;
