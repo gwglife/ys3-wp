@@ -364,7 +364,10 @@ function filteralpha(event) {
 				<div class="text-center top-text">
 
 					<h1 class="text-white">Get A Quote</h1>
-					<p>Fill out the info below to get a quote. It's that easy.</p>
+					<p>Fill out the info below to get a quote. Not sure how much life insurance you need?</p>
+					<p>Our free calculator can help!</p>
+
+	<a href="/free-life-insurance-calculator" class="btn btn-primary">Try it now</a>
 
 				</div>
 				<!-- Main Heading Ends -->

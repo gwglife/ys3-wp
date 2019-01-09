@@ -46,7 +46,10 @@
     left: -999em;
 }
 
-
+.calc-result{
+    font-weight:600;
+    font-size:20px;
+}
 
 /*
     Wizard
@@ -146,7 +149,7 @@
 	background-image: url("https://yousurancestg.wpengine.com/wp-content/themes/ys3-wp/img/bg.jpg");
     display: block;
     margin: 0.5em;
-    min-height: 35em;
+    min-height:40em;
     overflow: hidden;
     position: relative;
     width: auto;
@@ -169,7 +172,6 @@
     float: left;
     position: absolute;
     width: 95%;
-    height: 95%;
     padding: 2.5%;
 }
 
@@ -384,3 +386,41 @@
 {
     display: list-item;
 }
+
+@media(max-width:768px){
+
+.wizard > .steps a, .wizard > .steps a:hover, .wizard > .steps a:active{
+height:50px;
+width:50px;
+overflow:hidden;
+padding:.5rem;
+}
+
+.wizard > .content{
+    min-height:30em;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
