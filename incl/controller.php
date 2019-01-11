@@ -264,6 +264,9 @@ exit;
 *
 */
 if( $_POST['proccess_epigenetic_insurance_quote'] == "true") {
+	
+		$_POST = array_map( 'stripslashes_deep', $_POST );
+	
 		/*
 		*
 		* Begin error checking
