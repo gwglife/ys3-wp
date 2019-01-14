@@ -65,7 +65,8 @@ if($_POST['getquote'] == 'true') {
 				/* uncomment once we hear back why aig and this other one aint working */
 				"carrier_ids" => array(
 					//140,
-					193
+					193,
+					69
 				  ),
 				"product_types" => ["".$_POST['coverageLength'].""],
 				//"product_ids" => [590,1841,588,586,587,120,118,121,122,123,124,125,126,127],
