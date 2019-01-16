@@ -473,7 +473,7 @@ form div[class^="col-"]{
             border-right-color:#333;
         }
         .field-tip:hover .tip-content {
-            right:-20px;
+            right:17px;
             opacity:1;
             z-index:10;
         }

@@ -28,7 +28,7 @@ get_header();
 				<div class="row text-center">
 					<div class="col-sm-12">
 						<h1> 
-							<strong>Coming January 14th</strong>
+							<strong>Come inside and chat for a bit</strong>
 						</h1>
 						</div>
 						
