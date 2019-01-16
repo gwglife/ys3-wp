@@ -15,6 +15,10 @@ get_header();
 
 ?>
 
+<style>
+	#wrapper-footer{display:none;}
+</style>
+
 <div class="video-container">
 
 	<video class="vid-top" autoplay loop id="video-background" muted plays-inline>
@@ -27,9 +31,27 @@ get_header();
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-sm-12">
-						<h1> 
-							<strong>Come inside and chat for a bit</strong>
-						</h1>
+						
+<div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-interval="15000">
+  <div class="carousel-inner">
+    <div class="carousel-item py-3 active">
+      <h1><strong>Come inside and chat for a bit.</strong></h1>
+    </div>
+    <div class="carousel-item py-3">
+      <h1><strong>Life insurance as unique as you are.</strong></h1>
+    </div>
+    <div class="carousel-item py-3">
+      <h1><strong>What's your true Biological Age?</strong></h1>
+    </div>
+    <div class="carousel-item py-3">
+      <h1><strong>How healthy are you on a molecular level?</strong></h1>
+    </div>
+    <div class="carousel-item py-3">
+      <h1><strong>Get fit. Get molecular.</strong></h1>
+    </div>
+  </div>
+</div>
+
 						</div>
 						
 					</div>
@@ -39,9 +61,4 @@ get_header();
 
 		</div>
 
-		<?php
-		while ( have_posts() ) : the_post();
-			get_template_part( 'loop-templates/content', 'empty' );
-		endwhile;
-
-		get_footer();
+		<?php get_footer() ?>
