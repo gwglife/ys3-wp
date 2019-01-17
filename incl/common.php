@@ -1,5 +1,5 @@
 <?php
-ini_set('memory_limit','64M');
+ini_set('memory_limit','512M');
 ini_set('max_execution_time', 10800);
 ini_set('soap.wsdl_cache_enabled', '0');
 ini_set("display_errors", 1);
